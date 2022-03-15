@@ -1,0 +1,13 @@
+*{
+    color: teal;
+    background-color: black;
+}
+
+mark{
+    color: mediumseagreen;
+    /* background-color: grey;  */ /*default yellow*/
+}
+code{
+    color: magenta
+}
+
