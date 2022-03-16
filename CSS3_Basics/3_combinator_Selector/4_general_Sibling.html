@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General sibling</title>
+    <style>
+        div~p{
+            background-color: #008080;
+        }
+    </style>
+</head>
+<body>
+    <p>Para five</p><!-- Not sibling to div -->
+    <div>
+        <p>para 1</p>
+    </div>
+    <p>para2</p> <!-- i am sibling to div -->
+    <code>Javascript</code><!-- i am sibling to div -->
+    <p>para3</p><!-- i am sibling to div -->
+    <p>para4</p><!-- i am sibling to div -->
+</body>
+</html>

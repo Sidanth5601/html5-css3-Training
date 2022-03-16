@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Forms</h1>
+        <form action="">
+            <div>
+                <label>User Name</label>
+                <input type="text" value="Mary" class="form-control w-50" required>
+                <!-- 'required' keyword is a HTML validation -->
+            </div>
+            <br>
+            <div>
+                <lable>Password</lable>
+                <input type="password" class="form-control w-50" required>
+            </div>
+            <br>
+            <!-- multiline input -->
+            <div>
+                <lable>Comments</lable>
+                <textarea type="form-multiline"></textarea>
+            </div>
+            <br>
+            <!-- checkbox -->
+            <div>
+                <label>Subjects :</label>&nbsp;&nbsp;
+                Maths &nbsp; <input type="checkbox" class="form-check-input">
+                Phys &nbsp; <input type="checkbox" class="form-check-input">
+                Chem &nbsp; <input type="checkbox" class="form-check-input">
+            </div>
+            <br>
+            <!-- radia check -->
+            <div><label>Gender</label></div>
+            Male <input type="radio" name="Male" id=""> &nbsp;
+            Female <input type="radio" name="Male" id=""> &nbsp;
+            Not want to Mention <input type="radio" name="Male" id=""> &nbsp;
+
+            <br><br>
+            <!-- drop down or select -->
+            <div><label for="">States</label>
+                <select class="" form-select w-50>
+                    <option value="1">Delhi</option>
+                    <option value="2">TN</option>
+                    <option value="3">Kerela</option>
+                </select>
+            </div><br><br>
+            <!-- upload files -->
+            <div>
+                <label for="">Select File</label>
+                <input type="file" class="form-control w-50" accept="image/*">
+                <input type="file" class="form-control w-50" accept="application/pdf">
+                <input type="file" class="form-control w-50" accept=".csv">
+                <input type="file" class="form-control w-50"
+                    accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"">
+            </div>  
+            <!-- type of buttons -->
+            <div>
+                <button class=" btn btn-primary">Click Me</button>
+                <input type="button" value="Submit" class="btn btn-primary">
+                <input type="reset" value="Reset" class="btn btn-warning">
+                <input type="image" src="../../images/favicon-32x32.png">
+                <button type="submit" class="btn btn-primary">Submit Data</button> 
+                 <!--  submit -> reloads the page -->
+            </div>
+            <br><br>
+   
+        </form>
+    </div>
+
+
+</body>
+
+</html>
